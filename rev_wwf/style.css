@@ -1,0 +1,168 @@
+body {
+    width:56.25em;
+    text-align: center;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9999;
+
+}
+
+#titre{
+
+    text-shadow: 0.125em 0.125em 0.125em #333;
+    text-align:left;
+    font-weight:bold;
+    font-size:1.9em;
+    color:white;
+    padding:10px;
+    padding-left:20px;
+     background-color: green;
+}
+
+.imagetete{
+    padding-top:1px;
+    position: relative;
+}
+
+#page{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.imagetop{
+    position:absolute;
+    border-style:solid;
+  border-width:5px;
+  border-color:black;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+}
+
+.navigation{
+    text-align: left;
+    padding-top:25px;
+}
+
+a{
+    text-decoration: none;
+    color:green;
+    font-size:1em;
+    padding:10px;
+    margin-left:10px;
+    border-style:solid;
+    border-width:0.0625em;
+    border-color:gray;
+}
+
+.navigation a:hover{
+    background-color: green;
+    color:white;
+}
+
+.TitreParag{
+    font-size:2.1em;
+    color:gray;
+    text-align:left;
+    margin-left:10px;
+    padding-top:40px;
+}
+
+#intro{
+    font-size:1.5em;
+    color:green;
+    line-height: 1.7em;
+    text-align: left;
+    margin-top:20px;
+    margin-left:10px;
+}
+
+#text{
+    color:gray;
+    text-align:left;
+    margin-left:10px;
+    margin-top:25px;
+}
+
+.paragraphe{
+    font-size:0.9em;
+    color:gray;
+    line-height: 1.7em;
+    text-align: left;
+    margin-left:10px;
+    margin-top:20px;
+    float:left;
+    width:550px;
+}
+
+.perso{
+    border: solid;
+    border-width: 0.5em;
+    border-radius: 5px;
+    border-color:grey ;
+    width:250px;
+    margin-top:35px;
+}
+
+.paragraphe b{
+    color:green;
+}
+
+#SavoirPlus{
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+}
+
+label{
+    font-size:1.1em;
+    color:green;
+}
+
+#commentaire{
+    text-align: left;
+}
+
+.zone{
+    margin-top:20px;
+    margin-bottom:20px;
+    width:200px;
+}
+
+#com{
+    height:250px;
+    width:850px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+button{
+    font-size:0.9em;
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+#monde{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#monde img{
+    width:860px;
+    border-radius:10px;
+}
+
+#source{
+    font-size:0.7em;
+    color:white;
+    text-align: left;
+    background-color:gray;
+    padding:20px;
+}
+
+
