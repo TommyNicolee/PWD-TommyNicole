@@ -7,22 +7,28 @@ body {
 
 }
 
-#titre{
+header{
+    position:absolute;
+    background-color: #74AF4D;
+    margin-bottom:2px;
+    width:100%;
+    border-bottom: solid white;
 
-    text-shadow: 0.125em 0.125em 0.125em #333;
+}
+#titre{
+    text-shadow: 0.125em 0.125em 0.125em #000;
     text-align:left;
     font-weight:bold;
     font-size:1.9em;
     color:white;
     padding:10px;
     padding-left:20px;
-    background-color: #74AF4D;
 }
 
 .imagetete{
-    padding-top:1px;
     position: relative;
     height:15.5em;
+    width:100%;
 }
 
 #page{
@@ -36,9 +42,8 @@ body {
     border-style:solid;
     border-width:5px;
     border-color:black;
-    top: 50px;
+    top: 100px;
     left: 50px;
-    width: 100px;
 }
 
 .navigation{
