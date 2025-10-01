@@ -22,3 +22,9 @@ footer{
     text-align:center;
     grid-column:1 / -1;
 }
+
+main{
+    background-color: #F0A478;
+    padding:1rem;
+    overflow-y:auto;
+}
