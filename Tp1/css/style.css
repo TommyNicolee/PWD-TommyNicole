@@ -128,3 +128,12 @@ a{
     --base-pos: -3300px 0px; /* position « normale » */
     background-position: var(--base-pos);
 }
+
+@media (min-width:1025px){
+    /* Exemple : élargir le menu sur les gros écrans */
+    nav{
+        background:#F57A78;          /* nuance légèrement différente */
+        padding:1.5rem;
+    }
+    /* Vous pouvez ajouter d’autres règles spécifiques au desktop ici */
+}
