@@ -6,3 +6,11 @@ body{
     grid-template-columns:200px 1fr;
     height:100vh;
 }
+
+header{
+    background:#F08F78;
+    color:#fff;
+    padding:1rem;
+    text-align:center;
+    grid-column:1 / -1;       
+}
