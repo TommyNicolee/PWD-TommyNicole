@@ -163,3 +163,27 @@ a{
     }
     
 }
+
+/* ---------- Mobile (≤ 640 px) ---------- */
+@media (max-width:640px){
+    body{
+        grid-template-rows:
+            auto   /* header   */
+            auto   /* nav      */
+            auto   /* main     */
+            auto;  /* footer   */
+        grid-template-columns:1fr;
+    }
+    nav{
+        display:grid;
+        justify-items:center;
+        gap:0.5rem;
+    }
+    nav ul{
+        display:grid;
+        gap:0.5rem;
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+}
