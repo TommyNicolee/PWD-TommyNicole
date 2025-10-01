@@ -68,3 +68,63 @@ a{
     margin: 10px;
     background: url("../img/spritesheet.png") no-repeat;
 }
+
+#gardiens {
+    --base-pos: 0px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#superman{
+    --base-pos: -300px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#batman{
+    --base-pos: -600px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#aquaman{
+    --base-pos: -900px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#captain{
+    --base-pos: -1200px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#rebels{
+    --base-pos: -1500px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#hulk{
+    --base-pos: -1800px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#thor{
+    --base-pos: -2100px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#ironman{
+    --base-pos: -2400px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#demon{
+    --base-pos: -2700px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#avengers{
+    --base-pos: -3000px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#sda{
+    --base-pos: -3300px 0px; /* position « normale » */
+    background-position: var(--base-pos);
+}
