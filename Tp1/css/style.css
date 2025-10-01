@@ -137,3 +137,29 @@ a{
     }
     /* Vous pouvez ajouter d’autres règles spécifiques au desktop ici */
 }
+
+/* ---------- Tablette (≤ 1024 px) ---------- */
+@media (max-width:1024px){
+    body{
+        grid-template-columns:1fr;                 
+        grid-template-rows:
+            auto   /* header   */
+            auto   /* nav      */
+            auto   /* main     */
+            auto;  /* footer   */
+    }
+    nav{
+        display:grid;
+        justify-items:center;
+        gap:1rem;
+    }
+    nav ul{
+        display:grid;
+        grid-auto-flow:column;
+        gap:2rem;
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    
+}
