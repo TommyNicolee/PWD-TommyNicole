@@ -33,8 +33,21 @@ nav{
     background:#F57A78;
 }
 
+ul{
+    padding: 0;
+}
+
+ul :hover{
+    background-color: white;
+}
+
 li{
+    border-style:solid;
+    border-radius: 3px;
+    border-width: 2px;
     margin-bottom:5px;
+    list-style:none;
+    background-color: #F0A478;
 }
 
 a{
@@ -49,14 +62,21 @@ a{
 .gallery{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
+    /*grid-template-columns:repeat(4,1fr);*/
     gap:10px;
     width:100%;
 }
 
-.gallery > div{
+.gallery > .sprite{
     position:relative;
     width:90%;
     overflow:hidden;
+    text-align: center;
+}
+
+.lien{
+    
+    color:black;
     text-align: center;
 }
 
@@ -135,7 +155,9 @@ a{
         background:#F57A78;          /* nuance légèrement différente */
         padding:1.5rem;
     }
-    /* Vous pouvez ajouter d’autres règles spécifiques au desktop ici */
+    .gallery .image{
+        pointer-events: none; 
+    }
 }
 
 /* ---------- Tablette (≤ 1024 px) ---------- */
@@ -161,7 +183,9 @@ a{
         padding:0;
         margin:0;
     }
-    
+    .gallery .image{
+        pointer-events: none; 
+    }
 }
 
 /* ---------- Mobile (≤ 640 px) ---------- */
@@ -185,5 +209,13 @@ a{
         list-style:none;
         padding:0;
         margin:0;
+    }
+    .gallery .lien{
+        visibility: hidden;
+        pointer-events: none; 
+    }
+    .gallery .image{
+        pointer-events: all;
+        
     }
 }
