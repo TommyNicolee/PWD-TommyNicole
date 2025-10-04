@@ -1,0 +1,210 @@
+header{
+    background:#F08F78;
+    color:#fff;
+    padding:1rem;
+    text-align:center;
+    grid-column:1 / -1;       
+}
+
+footer{
+    background:#F0B978;
+    color:#fff;
+    padding:1rem;
+    text-align:center;
+    grid-column:1 / -1;
+}
+
+main{
+    background-color: #F0A478;
+    padding:1rem;
+    overflow-y:auto;
+}
+
+nav{
+    background:#F57A78;
+}
+
+ul{
+    padding: 0;
+}
+
+ul :hover{
+    background-color: white;
+}
+
+li{
+    border-style:solid;
+    border-radius: 0.1875rem;
+    border-width: 0.125rem;   
+    margin-bottom:0.3125rem; 
+    list-style:none;
+    background-color: #F0A478;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.icone{
+    width:1em;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.625rem, 20.625rem));
+    /*grid-template-columns:repeat(4,1fr);*/
+    gap:0.625rem;
+    width:100%;
+}
+
+.gallery > .sprite{
+    position:relative;
+    width:90%;
+    overflow:hidden;
+    text-align: center;
+}
+
+.lien{
+    color:black;
+    text-align: center;
+}
+
+.sprite {
+    border-radius: 1.25rem; 
+    display: inline-block;
+    width: 18.75rem;  
+    height: 26.3125rem; 
+    margin: 0.625rem;  
+    background: url("../img/spritesheet.png") no-repeat;
+}
+
+#gardiens {
+    --base-pos: 0 0; /* position « normale » */
+    background-position: var(--base-pos);
+}
+
+#superman{
+    --base-pos: -18.75rem 0; 
+    background-position: var(--base-pos);
+}
+
+#batman{
+    --base-pos: -37.5rem 0; 
+    background-position: var(--base-pos);
+}
+
+#aquaman{
+    --base-pos: -56.25rem 0; 
+    background-position: var(--base-pos);
+}
+
+#captain{
+    --base-pos: -75rem 0; 
+    background-position: var(--base-pos);
+}
+
+#rebels{
+    --base-pos: -93.75rem 0; 
+    background-position: var(--base-pos);
+}
+
+#hulk{
+    --base-pos: -112.5rem 0;
+    background-position: var(--base-pos);
+}
+
+#thor{
+    --base-pos: -131.25rem 0; 
+    background-position: var(--base-pos);
+}
+
+#ironman{
+    --base-pos: -150rem 0; 
+    background-position: var(--base-pos);
+}
+
+#demon{
+    --base-pos: -168.75rem 0; 
+    background-position: var(--base-pos);
+}
+
+#avengers{
+    --base-pos: -187.5rem 0; 
+    background-position: var(--base-pos);
+}
+
+#sda{
+    --base-pos: -206.25rem 0;
+    background-position: var(--base-pos);
+}
+
+@media (min-width:64.0625rem){
+    /* Exemple : élargir le menu sur les gros écrans */
+    nav{
+        background:#F57A78;        
+        padding:1.5rem;
+    }
+    .gallery .image{
+        pointer-events: none; 
+    }
+}
+
+/* ---------- Tablette (≤ 1024px) ---------- */
+@media (max-width:64rem){
+    body{
+        grid-template-columns:1fr;                 
+        grid-template-rows:
+            auto   /* header   */
+            auto   /* nav      */
+            auto   /* main     */
+            auto;  /* footer   */
+    }
+    nav{
+        display:grid;
+        justify-items:center;
+        gap:1rem;
+    }
+    nav ul{
+        display:grid;
+        grid-auto-flow:column;
+        gap:2rem;
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    .gallery .image{
+        pointer-events: none; 
+    }
+}
+
+/* ---------- Mobile (≤ 640px) ---------- */
+@media (max-width:40rem){
+    body{
+        grid-template-rows:
+            auto   /* header   */
+            auto   /* nav      */
+            auto   /* main     */
+            auto;  /* footer   */
+        grid-template-columns:1fr;
+    }
+    nav{
+        display:grid;
+        justify-items:center;
+        gap:0.5rem;
+    }
+    nav ul{
+        display:grid;
+        gap:0.5rem;
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    .gallery .lien{
+        visibility: hidden;
+        pointer-events: none; 
+    }
+    .gallery .image{
+        pointer-events: all;
+    }
+}

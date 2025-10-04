@@ -1,0 +1,18 @@
+// 🔹 Variables
+$margin-body: 0;
+$font-main: Arial, Helvetica, sans-serif;
+$display-body: grid;
+$grid-rows: auto 1fr auto;
+$sidebar-width: 12.5rem; // équivaut à 200px
+$content-width: 1fr;
+$height-body: 100vh;
+
+// 🔹 Style
+body {
+  margin: $margin-body;
+  font-family: $font-main;
+  display: $display-body;
+  grid-template-rows: $grid-rows;
+  grid-template-columns: $sidebar-width $content-width;
+  height: $height-body;
+}
