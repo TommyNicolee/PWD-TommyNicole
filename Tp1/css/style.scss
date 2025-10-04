@@ -1,18 +1,16 @@
-// 🔹 Variables
-$margin-body: 0;
+// 🔹 Variables globales
 $font-main: Arial, Helvetica, sans-serif;
-$display-body: grid;
-$grid-rows: auto 1fr auto;
-$sidebar-width: 12.5rem; // équivaut à 200px
+$sidebar-width: 12.5rem; // 200px
 $content-width: 1fr;
-$height-body: 100vh;
+$layout-rows: auto 1fr auto;
+$full-height: 100vh;
 
 // 🔹 Style
 body {
-  margin: $margin-body;
+  margin: 0;
   font-family: $font-main;
-  display: $display-body;
-  grid-template-rows: $grid-rows;
+  display: grid;
+  grid-template-rows: $layout-rows;
   grid-template-columns: $sidebar-width $content-width;
-  height: $height-body;
+  height: $full-height;
 }
