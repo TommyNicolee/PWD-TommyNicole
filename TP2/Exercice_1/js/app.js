@@ -60,5 +60,18 @@ document.addEventListener("DOMContentLoaded", () => {
             titre.style.textAlign = "center";
             titre.style.margin = "30px 0";
             document.body.appendChild(titre);
+
+            // Ajouter tableau au body
+            document.body.appendChild(table);
+
+            //Texte final
+            const info = document.createElement("p");
+            info.textContent =
+                `Nombre de cellules ayant un nombre supérieur à ${seuil} : ${nbPlusSeuil}`;
+            info.style.textAlign = "center";
+            info.style.fontWeight = "bold";
+            info.style.marginTop = "15px";
+
+            document.body.appendChild(info);
         })
 });
