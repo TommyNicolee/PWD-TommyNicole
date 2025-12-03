@@ -23,3 +23,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btnCalc").addEventListener("click", calculerCD);
 });
+
+//Afficher les définitions des forces
+function afficherForces() {
+    const zone = document.getElementById("definition");
+
+    let html = "<ul class='list-group'>";
+    forces.forEach(f => {
+        html += `
+            <li class="list-group-item">
+                <strong>${f.force}</strong><br>
+                ${f.definition}
+            </li>
+        `;
+    });
+    html += "</ul>";
+
+    zone.innerHTML = html;
+}
