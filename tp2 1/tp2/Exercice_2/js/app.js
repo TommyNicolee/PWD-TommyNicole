@@ -13,4 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
             K   = data.data_cdp_k.k;    // [0.0364, 0.0334, 0.0301]
         })
 
+        // Charger les définitions des forces
+    fetch("http://localhost:8080/definition_forces.php")
+        .then(r => r.json())
+        .then(data => {
+            forces = data.definition_forces;
+            afficherForces();
+        })
+
+    document.getElementById("btnCalc").addEventListener("click", calculerCD);
 });
