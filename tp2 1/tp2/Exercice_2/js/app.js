@@ -48,4 +48,20 @@ function calculerCD() {
     const flap = document.getElementById("flap").value; // "0" "20" "45"
     const mach = parseFloat(document.getElementById("mach").value);
     const cl = parseFloat(document.getElementById("cl").value);
+
+    //Validation des entrées
+    if (flap === "") {
+        afficherResultat("Veuillez sélectionner un flap.");
+        return;
+    }
+
+    if (isNaN(mach) || mach < 0 || mach > 0.85) {
+        afficherResultat("Le Mach doit être entre 0 et 0.85.");
+        return;
+    }
+
+    if (isNaN(cl) || cl < 0.2 || cl > 1.2) {
+        afficherResultat("Le Cl doit être entre 0.2 et 1.2.");
+        return;
+    }
 }
