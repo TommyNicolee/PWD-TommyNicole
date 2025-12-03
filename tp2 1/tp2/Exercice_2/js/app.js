@@ -41,3 +41,11 @@ function afficherForces() {
 
     zone.innerHTML = html;
 }
+
+//Fonction de calcul du CD
+function calculerCD() {
+
+    const flap = document.getElementById("flap").value; // "0" "20" "45"
+    const mach = parseFloat(document.getElementById("mach").value);
+    const cl = parseFloat(document.getElementById("cl").value);
+}
