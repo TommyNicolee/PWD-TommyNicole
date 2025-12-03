@@ -22,6 +22,36 @@ document.addEventListener("DOMContentLoaded", () => {
             const table = document.createElement("table");
             table.style.borderCollapse = "collapse";
             table.style.margin = "auto";
-            
+
+            //Génération des lignes/colonnes
+            for (let l = 0; l < nbLignes; l++) {
+                const ligne = document.createElement("tr");
+
+                for (let c = 0; c < nbColonnes; c++) {
+
+                    const cell = document.createElement("td");
+
+                    //utiliser _.random(min, max)
+                    const value = _.random(min, max);
+                    cell.textContent = value;
+
+                    // Style des cellules
+                    cell.style.border = "1px solid #ccc";
+                    cell.style.padding = "6px";
+                    cell.style.width = "40px";
+                    cell.style.textAlign = "center";
+
+                    // Coloration si > seuil
+                    if (value > seuil) {
+                        cell.style.backgroundColor = couleurFond;
+                        cell.style.color = couleurTexte;
+                        nbPlusSeuil++;
+                    }
+
+                    ligne.appendChild(cell);
+                }
+
+                table.appendChild(ligne);
+            }
         })
 });
