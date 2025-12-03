@@ -80,3 +80,21 @@ function calculerCD() {
 
     afficherResultat("CD = " + CD.toFixed(5));
 }
+
+//CDcomp selon la valeur de Mach
+function calculerCDcomp(M, Cl) {
+
+    if (M >= 0 && M <= 0.60) {
+        return 0;
+    }
+
+    if (M > 0.60 && M <= 0.78) {
+        return (0.0508 - 0.1748 * M + 0.1504 * M * M) * (Cl * Cl);
+    }
+
+    if (M > 0.78 && M <= 0.85) {
+        return (-99.3434 + 380.888 * M - 486.8 * M * M + 207.408 * M * M * M) * (Cl * Cl);
+    }
+
+    return 0;
+}
