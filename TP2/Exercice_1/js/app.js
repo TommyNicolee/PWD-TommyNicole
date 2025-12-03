@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const couleurFond = params.couleur_fond_cellule;
             const couleurTexte = params.couleur_texte_cellule;
 
+            //Création du tableau
+            const table = document.createElement("table");
+            table.style.borderCollapse = "collapse";
+            table.style.margin = "auto";
             
         })
 });
