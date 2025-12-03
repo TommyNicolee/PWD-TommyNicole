@@ -98,3 +98,8 @@ function calculerCDcomp(M, Cl) {
 
     return 0;
 }
+
+//Afficher le résultat
+function afficherResultat(txt) {
+    document.getElementById("resultat").innerHTML = txt;
+}
