@@ -53,5 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 table.appendChild(ligne);
             }
+
+            // Ajouter un titre centré
+            const titre = document.createElement("h1");
+            titre.textContent = "Tableau de nombres";
+            titre.style.textAlign = "center";
+            titre.style.margin = "30px 0";
+            document.body.appendChild(titre);
         })
 });
