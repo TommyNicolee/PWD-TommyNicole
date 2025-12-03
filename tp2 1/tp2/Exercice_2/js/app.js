@@ -64,4 +64,19 @@ function calculerCD() {
         afficherResultat("Le Cl doit être entre 0.2 et 1.2.");
         return;
     }
+
+    // Conversion flap = index
+    // Flap 0 = index 0
+    // Flap 20 = index 1
+    // Flap 45 = index 2
+    const flapIndex = flap === "0" ? 0 : flap === "20" ? 1 : 2;
+
+    const CDp = CDP[flapIndex];
+    const kValue = K[flapIndex];
+
+    const CDcomp = calculerCDcomp(mach, cl);
+
+    const CD = CDp + (kValue * cl * cl) + CDcomp;
+
+    afficherResultat("CD = " + CD.toFixed(5));
 }
